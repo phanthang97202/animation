@@ -62,14 +62,12 @@ const activeObserver = (idNode, addClass) => {
     false
   );
 };
-
 activeObserver(introduce, "activeIntroduce");
 activeObserver(service, "activeServices");
 activeObserver(about, "activeAbout");
 activeObserver(bookroom, "activeBookroom");
 activeObserver(weather, "activeWeather");
 activeObserver(youtube, "activeYoutube");
-
 // chức năng đóng mở menu
 const btnOpenMenu = document.getElementById("btnOpenMenu");
 const menu = document.getElementById("menu");
@@ -82,6 +80,30 @@ window.addEventListener("resize", (e) => {
     menu.classList.remove("activeMenu");
   }
 });
+
+// window.addEventListener("load", (e) => {
+//   console.log(window.innerWidth);
+//
+//   if (window.innerWidth > 1060) {
+//     activeObserver(introduce, "activeIntroduce");
+//     activeObserver(service, "activeServices");
+//     activeObserver(about, "activeAbout");
+//     activeObserver(bookroom, "activeBookroom");
+//     activeObserver(weather, "activeWeather");
+//     activeObserver(youtube, "activeYoutube");
+//   }
+// });
+
+// window.addEventListener("scroll", (e) => {
+//   if (window.innerWidth > 1060) {
+//     activeObserver(introduce, "activeIntroduce");
+//     activeObserver(service, "activeServices");
+//     activeObserver(about, "activeAbout");
+//     activeObserver(bookroom, "activeBookroom");
+//     activeObserver(weather, "activeWeather");
+//     activeObserver(youtube, "activeYoutube");
+//   }
+// });
 // const animation = (nodeList, condition, classActive) => {
 //   window.addEventListener("scroll", () => {
 //     const xyz = nodeList.getBoundingClientRect();

@@ -769,6 +769,23 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
+  .banner__web {
+    margin-top: 100px;
+  }
+  nav {
+    top: -90px;
+    width: 98%;
+    margin: auto;
+  }
+  .nav__left {
+    width: 100% !important;
+  }
+  .nav__right {
+    display: none;
+  }
+  #btnOpenMenu {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .aboutTwo {
