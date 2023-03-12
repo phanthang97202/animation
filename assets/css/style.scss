@@ -124,6 +124,7 @@ nav {
   right: 0;
   justify-content: space-between;
   height: 90px;
+  z-index: 100;
   .nav__left {
     padding-left: 20px;
     width: 95%;
@@ -137,7 +138,7 @@ nav {
     }
   }
   .nav__right {
-    width: 5%;
+    width: 80px;
     height: 100%;
     position: absolute;
     right: 0;
@@ -712,10 +713,23 @@ footer {
 .activeMenu {
   display: block !important;
 }
+@keyframes topToCurrent {
+  0% {
+    transform: translateY(-12px);
+    z-index: 2;
+  }
+  100% {
+    z-index: 10;
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 1060px) {
+  // .nav__right {
+  //   width: 10% !important;
+  // }
   #btnOpenMenu {
     display: block !important;
-    margin-right: 30px;
+    margin-right: 60px;
     background-color: transparent;
     color: #000;
     border: none;
@@ -729,7 +743,9 @@ footer {
   }
   .nav__menu {
     position: relative;
+
     ul {
+      animation: topToCurrent 0.6s ease-in-out;
       background-color: #fff;
       position: absolute;
       right: 10px;
@@ -741,6 +757,8 @@ footer {
       align-items: baseline;
       padding-left: 30px;
       li {
+        animation: topToCurrent 0.6s ease-in-out;
+
         a {
           display: block;
           padding: 10px 0 !important;
@@ -749,6 +767,8 @@ footer {
       }
     }
   }
+}
+@media screen and (max-width: 800px) {
 }
 @media screen and (max-width: 768px) {
   .aboutTwo {
