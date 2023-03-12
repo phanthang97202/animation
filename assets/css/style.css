@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url(//db.onlinewebfonts.com/c/2c8f6c3c149c5a07410e52cfb3b2db2b?family=mfn-icons);
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#carouselExampleCaptions {
+  position: relative;
+}
+
+.container__header {
+  position: relative;
+}
+
+.carouselItem {
+  height: 90vh !important;
+}
+
+.banner__text {
+  opacity: 0;
+}
+
+.carouselItem.active .banner__text {
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.carouselItem > img {
+  height: 100% !important;
+}
+
+/* css button carousel  */
+.header_web {
+  position: relative;
+}
+
+.button_carousel_container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.btn__image {
+  width: 200px !important;
+  height: 80px !important;
+  position: relative;
+}
+.btn__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.btn__image_text {
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #000;
+  left: 0;
+  right: 0;
+}
+.btn__image_text p {
+  color: #fff;
+  font-size: 12px;
+  margin: auto;
+  padding: 6px 0;
+}
+
+.btn__image:hover > .btn__image_text {
+  height: 30px;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.carousel-indicators [data-bs-target] {
+  text-indent: 0;
+}
+
+/* css text banner img  */
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* css navbar  */
+nav {
+  margin: 0 12%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  height: 90px;
+}
+nav .nav__left {
+  padding-left: 20px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav .nav__left .logo__web img {
+  height: 37px;
+}
+nav .nav__right {
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -4.5px;
+  background-color: #f5f5f5;
+}
+nav .nav__right button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+}
+nav .nav__right::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  background-color: #e3e3e3;
+  transform: skewX(0deg) skewY(-25deg);
+}
+nav .nav__menu ul {
+  display: flex;
+  align-items: center;
+}
+nav .nav__menu ul li a:first-child {
+  border-right: 1px solid #ededed;
+}
+nav .nav__menu ul li a {
+  border-right: 1px solid #ededed;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+nav .nav__menu ul li a:last-child {
+  border-right: 0;
+  border-left: 1px solid #ededed;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.activeIntroduce > h2,
+.activeIntroduce > p,
+.activeIntroduce > .introduce__btn {
+  animation: smallToBig 1s ease-in-out alternate;
+}
+
+.introduce {
+  text-align: center;
+}
+.introduce h2 {
+  color: #444444;
+  font-size: 42px;
+  font-weight: 500;
+  font-family: "Patua One";
+}
+.introduce p {
+  width: 63%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #a8a8a8;
+}
+.introduce__btn_sign::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(229, 218, 218, 0.2);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.introduce__btn_sign {
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03), inset 0px 4px 3px -2px rgba(0, 0, 0, 0.07);
+}
+.introduce__btn_sign button:first-child {
+  font-size: 10px;
+  color: black;
+  background-color: #eb5c24;
+  border: none;
+  padding: 10px 16px;
+}
+.introduce__btn_sign button:last-child {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  /* font-family: 'Roboto'; */
+  background-color: #ed703a;
+  /* margin-left: -3px; */
+  /* border-left: none; */
+  border: none;
+}
+.introduce__btn_read::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(162, 133, 133, 0.2);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.introduce__btn_read {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03), inset 0px 4px 3px -2px rgba(0, 0, 0, 0.07);
+}
+.introduce__btn_read button:first-child {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px 16px;
+}
+.introduce__btn_read button:last-child {
+  font-size: 14px;
+  color: #747474;
+  font-weight: 500;
+  /* font-family: 'Roboto'; */
+  background-color: #f7f7f7;
+  /* margin-left: -3px; */
+  /* border-left: none; */
+  border: none;
+  padding: 10px 16px;
+}
+
+.introduce__btn_sign:hover::before {
+  animation: hoverBeforeCoverButton 0.5s ease-in-out;
+}
+
+.introduce__btn_read:hover::before {
+  animation: hoverBeforeCoverButton 0.5s ease-in-out;
+}
+
+@keyframes hoverBeforeCoverButton {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes smallToBig {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.services {
+  text-align: center;
+}
+.services h2 {
+  font-size: 21px;
+  color: #444444;
+  font-family: "Patua One";
+}
+.services a {
+  display: block;
+  margin: 26px 0;
+  overflow: hidden;
+}
+.services a img {
+  width: 100%;
+  height: 100%;
+}
+.services a img:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+}
+.services p {
+  font-size: 13px;
+  color: #626262;
+  font-family: "Roboto" !important;
+}
+
+.activeServices .servicesOne {
+  animation: translateLeft 0.5s ease-in-out;
+}
+
+.activeServices .servicesTwo {
+  animation: translateCenter 0.5s ease-in-out;
+}
+
+.activeServices .servicesThree {
+  animation: translateRight 0.5s ease-in-out;
+}
+
+@keyframes translateLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes translateCenter {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes translateRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.about h2 {
+  font-size: 30px;
+  color: #444444;
+  font-family: "Patua One";
+}
+.about a img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutOne p {
+  font-size: 13px;
+  color: #626262;
+  font-family: "Roboto";
+  padding: 20px 0;
+  margin: 0;
+}
+
+.aboutTwo p {
+  font-size: 15.6px;
+  color: #626262;
+  font-family: "Roboto";
+}
+.aboutTwo ul li {
+  position: relative;
+  font-size: 13px;
+  color: #737e86;
+  font-family: "Roboto";
+  padding: 10px 0 10px 12px;
+}
+.aboutTwo ul li i {
+  padding-right: 16px;
+  color: #000;
+}
+.aboutTwo ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 1px;
+  background-color: #e9e2e2;
+}
+
+.activeAbout .aboutTwo > h2 {
+  animation: zoomAndSmall 0.8s ease-out alternate;
+}
+
+.activeAbout .aboutTwo > p {
+  animation: zoomAndSmall 0.8s ease-out alternate;
+}
+
+.activeAbout .aboutTwo > ul {
+  animation: zoomAndSmall 0.8s ease-out alternate;
+}
+
+@keyframes zoomAndSmall {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.aboutThree div {
+  padding-left: 10px;
+  padding-top: 16px;
+}
+.aboutThree div blockquote {
+  font-size: 17px;
+  color: #444444;
+  font-family: "Patua One";
+  line-height: 32px;
+  background: url("https://themes.muffingroup.com/be/hotel/wp-content/themes/betheme/images/stripes/textline.png") repeat-y;
+  position: relative;
+  z-index: 2;
+}
+.aboutThree div blockquote::before {
+  content: "\e909";
+  position: absolute;
+  font-family: "mfn-icons";
+  font-size: 65px;
+  top: -10px;
+  left: -10px;
+  color: #e3e3e3;
+  z-index: -1;
+}
+
+.container__bookroom {
+  background-color: #e7f4fa;
+}
+
+.bookroom {
+  text-align: center;
+}
+.bookroom h4 {
+  color: #444444;
+  font-size: 42px;
+  font-family: "Patua One";
+  margin: 50px 0 10px 0;
+}
+.bookroom p {
+  color: #a8a8a8;
+  font-size: 15.6;
+  font-family: "Roboto";
+  margin-bottom: 40px;
+  width: 67%;
+  margin: auto;
+}
+.bookroom__img_dollar {
+  margin-top: 40px;
+}
+
+.activeBookroom .bookroom__img_bell {
+  animation: bookroomBell 0.8s ease-in-out;
+}
+
+.activeBookroom h4 {
+  animation: smallToBig 0.8s ease-in-out;
+}
+
+.activeBookroom p {
+  animation: smallToBig 0.8s ease-in-out;
+}
+
+.activeBookroom .bookroom__img_dollar {
+  animation: bookroomBell 0.8s ease-in-out;
+}
+
+@keyframes bookroomBell {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.container__weather {
+  padding: 500px 0 50px 0;
+  background-color: #2b7785;
+  background-image: url(https://themes.muffingroup.com/be/hotel/wp-content/uploads/2015/02/section_plans.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.activeWeather .weather__title {
+  animation: weatherAnimation 1s ease-in-out;
+}
+
+.weather__title {
+  text-align: right;
+  padding-top: 142px;
+}
+.weather__title ul {
+  padding: 0;
+}
+.weather__title ul li {
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #fff;
+  font-family: "Roboto";
+  border-bottom: 1px solid rgba(205, 205, 205, 0.2);
+}
+.weather__title ul li:first-child {
+  border-bottom: 1px solid rgba(205, 205, 205, 0.2);
+}
+.weather__title ul li:last-child {
+  border: none;
+}
+
+@keyframes weatherAnimation {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.weather__basic,
+.weather__standard,
+.weather__professional {
+  padding: 10px 4px;
+  text-align: center;
+}
+.weather__basic h3,
+.weather__standard h3,
+.weather__professional h3 {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Patua One";
+}
+.weather__basic ul,
+.weather__standard ul,
+.weather__professional ul {
+  padding: 0;
+  text-align: center;
+}
+.weather__basic ul li:nth-child(2),
+.weather__standard ul li:nth-child(2),
+.weather__professional ul li:nth-child(2) {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Patua One";
+}
+.weather__basic ul li:nth-child(2) span,
+.weather__standard ul li:nth-child(2) span,
+.weather__professional ul li:nth-child(2) span {
+  font-size: 45px;
+  color: #ed703a;
+}
+.weather__basic ul li,
+.weather__standard ul li,
+.weather__professional ul li {
+  font-size: 13px;
+  color: #fff;
+  font-family: "Roboto";
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.2);
+}
+.weather__basic ul li:nth-child(7),
+.weather__standard ul li:nth-child(7),
+.weather__professional ul li:nth-child(7) {
+  border-bottom: none;
+}
+.weather__basic ul li:nth-child(8),
+.weather__standard ul li:nth-child(8),
+.weather__professional ul li:nth-child(8) {
+  border: none;
+}
+.weather__basic ul li:last-child button,
+.weather__standard ul li:last-child button,
+.weather__professional ul li:last-child button {
+  background-color: #ed703a;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03), inset 0px 4px 3px -2px rgba(0, 0, 0, 0.07);
+}
+
+.activeWeatherChoosen {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.youtube {
+  background-color: #d6c5b2;
+  align-items: center;
+}
+
+.youtube__text p {
+  color: #444444;
+  font-size: 25px;
+  font-family: "Patua One";
+}
+
+.youtube__link {
+  text-align: center;
+}
+.youtube__link a {
+  display: table;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  box-sizing: border-box;
+}
+.youtube__link a i {
+  padding: 10px;
+  font-size: 42px;
+}
+
+.youtube__description p {
+  color: #626262;
+  font-size: 13px;
+  font-family: "Roboto";
+}
+
+/*# sourceMappingURL=style.css.map */
