@@ -3,6 +3,7 @@ const service = document.getElementById("service");
 const about = document.getElementById("about");
 const bookroom = document.getElementById("bookroom");
 const weather = document.getElementById("weather");
+const youtube = document.getElementById("youtube");
 let prevRatio = 0.0;
 
 const activeObserver = (idNode, addClass) => {
@@ -67,7 +68,20 @@ activeObserver(service, "activeServices");
 activeObserver(about, "activeAbout");
 activeObserver(bookroom, "activeBookroom");
 activeObserver(weather, "activeWeather");
+activeObserver(youtube, "activeYoutube");
 
+// chức năng đóng mở menu
+const btnOpenMenu = document.getElementById("btnOpenMenu");
+const menu = document.getElementById("menu");
+btnOpenMenu.addEventListener("click", () => {
+  menu.classList.toggle("activeMenu");
+});
+window.addEventListener("resize", (e) => {
+  console.log(window.innerWidth);
+  if (window.innerWidth > 1060) {
+    menu.classList.remove("activeMenu");
+  }
+});
 // const animation = (nodeList, condition, classActive) => {
 //   window.addEventListener("scroll", () => {
 //     const xyz = nodeList.getBoundingClientRect();

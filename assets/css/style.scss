@@ -405,6 +405,7 @@ nav {
     margin: 0;
   }
 }
+
 .aboutTwo {
   p {
     font-size: 15.6px;
@@ -435,6 +436,7 @@ nav {
     }
   }
 }
+
 .activeAbout .aboutTwo > h2 {
   animation: zoomAndSmall 0.8s ease-out alternate;
 }
@@ -551,7 +553,7 @@ nav {
   animation: weatherAnimation 1s ease-in-out;
 }
 .weather__title {
-  text-align: right;
+  // text-align: right;
   padding-top: 142px;
   ul {
     padding: 0;
@@ -642,6 +644,9 @@ nav {
 .youtube {
   background-color: #d6c5b2;
   align-items: center;
+  .row {
+    width: 87%;
+  }
 }
 .youtube__text {
   p {
@@ -670,5 +675,86 @@ nav {
     color: #626262;
     font-size: 13px;
     font-family: "Roboto";
+  }
+}
+.activeYoutube > div > .youtube__text,
+.activeYoutube > div > .youtube__link,
+.activeYoutube > div > .youtube__description {
+  animation: smallToBig 0.8s ease-in-out;
+}
+// CSS FOOTER
+footer {
+  padding: 20px 0;
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+  background-color: #545454;
+  .footer__author {
+    color: #cccccc;
+    font-size: 13px;
+    font-family: "Roboto";
+    // text-align: center;
+  }
+  .footer__link {
+    li {
+      padding: 0 10px;
+      a {
+        color: #65666c;
+        &:hover {
+          color: #8aa1a5;
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
+}
+.activeMenu {
+  display: block !important;
+}
+@media screen and (max-width: 1060px) {
+  #btnOpenMenu {
+    display: block !important;
+    margin-right: 30px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+  }
+
+  .nav__left {
+    justify-content: space-between;
+  }
+  #menu {
+    display: none;
+  }
+  .nav__menu {
+    position: relative;
+    ul {
+      background-color: #fff;
+      position: absolute;
+      right: 10px;
+      flex-direction: column;
+      padding: 0;
+      width: 301px;
+      top: 45px;
+      // display: block;
+      align-items: baseline;
+      padding-left: 30px;
+      li {
+        a {
+          display: block;
+          padding: 10px 0 !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutTwo {
+    // padding: 0;
+  }
+  .footer__link {
+    justify-content: center !important;
   }
 }

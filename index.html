@@ -74,7 +74,8 @@
                         alt="">
                 </div>
                 <div class="nav__menu">
-                    <ul class="m-0">
+                    <button id="btnOpenMenu" class="d-none btn btn-primary fa-light fa-bars"></button>
+                    <ul id="menu" class="menuNav m-0  ">
                         <li>
                             <a href="#">
                                 Home
@@ -198,7 +199,7 @@
         <div id="about" class="row gx-5 activeAbout">
 
             <div class="col-lg-4 col-md-4 col-sm-12 ">
-                <div class="about aboutOne">
+                <div class="about my-lg-0 my-md-2 my-sm-2 my-2 aboutOne">
                     <h2>About our hotel</h2>
                     <a href="">
                         <img src="https://themes.muffingroup.com/be/hotel/wp-content/uploads/2015/02/hotel_about.jpg"
@@ -219,7 +220,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 ">
-                <div class="about aboutTwo">
+                <div class="about my-lg-0 my-md-4 my-sm-4 my-4 aboutTwo px-md-0">
                     <h2>Services</h2>
 
                     <p>
@@ -236,7 +237,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 ">
-                <div class="about aboutThree">
+                <div class="about my-lg-0 my-md-4 my-sm-4 my-4 aboutThree">
                     <h2>What people say?</h2>
 
                     <div>
@@ -284,7 +285,7 @@
         <div id="weather" class="container container__weather_position activeWeather">
             <div class="row gx-5">
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                    <div class="weather__title">
+                    <div class="weather__title text-lg-end text-md-center text-sm-center text-center">
                         <ul>
                             <li>Including breakfast</li>
                             <li>Room Service</li>
@@ -350,11 +351,11 @@
     <!-- <div class="container__youtube">
 
     </div> -->
-    <div class="container-fluid youtube">
-        <div class="row gx-2">
+    <div class="container-fluid youtube py-4">
+        <div id="youtube" class="activeYoutube row gx-2 align-items-center m-auto">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="youtube__text">
-                    <p class="m-auto">See what the bahamas are</p>
+                    <p class="m-auto text-lg-end text-md-center text-sm-center text-center">See what the bahamas are</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -366,7 +367,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="youtube__description">
-                    <p>
+                    <p class="m-0">
                         It's better in the Bahamas! Welcome to the Out Islands of the Bahamas, or as we like to call it
                         the
                         REAL Bahamas. This
@@ -379,7 +380,27 @@
         </div>
     </div>
 
-    <script src="./assets/javascript/main.js"></script>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <p class="footer__author m-0">© 2021 Betheme by Muffin group | All Rights Reserved | Powered by
+                    WordPress
+                </p>
+            </div>
+            <div class="col-lg-6 col-12">
+                <ul class="d-flex justify-content-end m-0 footer__link ">
+                    <li><a href="" class="fa-brands fa-facebook-f"></a></li>
+                    <li><a href="" class="fa-brands fa-twitter"></a></li>
+                    <li><a href="" class="fa-brands fa-linkedin-in"></a></li>
+                    <li><a href="" class="fa-brands fa-pinterest-p"></a></li>
+                    <li><a href="" class="fa-sharp fa-solid fa-play"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" ./assets/javascript/main.js"></script>
     <!-- LINK SCRIPT  -->
     <script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
 

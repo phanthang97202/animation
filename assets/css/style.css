@@ -507,7 +507,6 @@ nav .nav__menu ul li a:last-child {
 }
 
 .weather__title {
-  text-align: right;
   padding-top: 142px;
 }
 .weather__title ul {
@@ -607,6 +606,9 @@ nav .nav__menu ul li a:last-child {
   background-color: #d6c5b2;
   align-items: center;
 }
+.youtube .row {
+  width: 87%;
+}
 
 .youtube__text p {
   color: #444444;
@@ -634,6 +636,80 @@ nav .nav__menu ul li a:last-child {
   color: #626262;
   font-size: 13px;
   font-family: "Roboto";
+}
+
+.activeYoutube > div > .youtube__text,
+.activeYoutube > div > .youtube__link,
+.activeYoutube > div > .youtube__description {
+  animation: smallToBig 0.8s ease-in-out;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #545454;
+}
+footer .row {
+  width: 80%;
+  margin: auto;
+}
+footer .footer__author {
+  color: #cccccc;
+  font-size: 13px;
+  font-family: "Roboto";
+}
+footer .footer__link li {
+  padding: 0 10px;
+}
+footer .footer__link li a {
+  color: #65666c;
+}
+footer .footer__link li a:hover {
+  color: #8aa1a5;
+  transition: all 0.3s linear;
+}
+
+.activeMenu {
+  display: block !important;
+}
+
+@media screen and (max-width: 1060px) {
+  #btnOpenMenu {
+    display: block !important;
+    margin-right: 30px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+  }
+  .nav__left {
+    justify-content: space-between;
+  }
+  #menu {
+    display: none;
+  }
+  .nav__menu {
+    position: relative;
+  }
+  .nav__menu ul {
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    flex-direction: column;
+    padding: 0;
+    width: 301px;
+    top: 45px;
+    align-items: baseline;
+    padding-left: 30px;
+  }
+  .nav__menu ul li a {
+    display: block;
+    padding: 10px 0 !important;
+    border: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__link {
+    justify-content: center !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
