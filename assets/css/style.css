@@ -102,6 +102,21 @@ ul {
 }
 
 /* css navbar  */
+.activeScrollNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  transition: all 0.2s linear;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 8%;
+}
+
+.disabledNavRightScroll {
+  display: none !important;
+}
+
 nav {
   margin: 0 12%;
   display: flex;
@@ -764,7 +779,27 @@ footer .footer__link li a:hover {
     border: none !important;
   }
 }
+@media screen and (max-width: 999px) {
+  .header__company {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
+  #btn__carousel {
+    height: 45px !important;
+    width: 112px !important;
+    object-fit: cover;
+  }
+  .activeScrollNav {
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  .activeNavRightScroll {
+    display: none !important;
+  }
+  #introduce p {
+    width: inherit;
+  }
   .banner__web {
     margin-top: 100px;
   }
@@ -817,6 +852,12 @@ footer .footer__link li a:hover {
     top: 90px;
     right: 0;
     padding-left: 20px;
+  }
+  .youtube__link {
+    margin: 10px 0 !important;
+  }
+  .youtube__description {
+    text-align: justify;
   }
   .footer__link {
     justify-content: center !important;

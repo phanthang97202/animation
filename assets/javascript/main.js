@@ -4,6 +4,10 @@ const about = document.getElementById("about");
 const bookroom = document.getElementById("bookroom");
 const weather = document.getElementById("weather");
 const youtube = document.getElementById("youtube");
+
+const nav = document.getElementById("nav");
+const nav_right = document.querySelector(".nav__right");
+const nav_right_mobile = document.querySelector(".nav__right_mobile");
 let prevRatio = 0.0;
 
 const activeObserver = (idNode, addClass) => {
@@ -79,7 +83,23 @@ window.addEventListener("resize", (e) => {
   if (window.innerWidth > 1060) {
     menu.classList.remove("activeMenu");
   }
+  // if (window.innerWidth < 800) {
+  //   nav_right_mobile.classList.remove("activeNavRightScroll");
+  // } else {
+  //   nav_right_mobile.classList.add("activeNavRightScroll");
+  // }
 });
+
+// window.addEventListener("scroll", (e) => {
+//   if (window.scrollY > 60) {
+//     nav.classList.add("activeScrollNav");
+//     nav_right.classList.add("disabledNavRightScroll");
+//     nav_right_mobile.classList.add("activeNavRightScroll");
+//   } else {
+//     nav.classList.remove("activeScrollNav");
+//     nav_right_mobile.classList.remove("activeNavRightScroll");
+//   }
+// });
 
 // window.addEventListener("load", (e) => {
 //   console.log(window.innerWidth);

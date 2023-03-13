@@ -112,7 +112,23 @@ ul {
 // =========================================================
 
 /* css navbar  */
-
+.activeScrollNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  transition: all 0.2s linear;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 8%;
+}
+.disabledNavRightScroll {
+  display: none !important;
+}
+// .activeNavRightScroll {
+//   display: block !important;
+//   background-color: transparent;
+// }
 nav {
   margin: 0 12%;
   display: flex;
@@ -816,7 +832,29 @@ footer {
     }
   }
 }
+@media screen and (max-width: 999px) {
+  .header__company {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
+  #btn__carousel {
+    height: 45px !important;
+    width: 112px !important;
+    object-fit: cover;
+  }
+  .activeScrollNav {
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  .activeNavRightScroll {
+    display: none !important;
+  }
+  #introduce {
+    p {
+      width: inherit;
+    }
+  }
   .banner__web {
     margin-top: 100px;
   }
@@ -843,18 +881,6 @@ footer {
   .g-5,
   .gx-5 {
     --bs-gutter-x: 0;
-  }
-  #service {
-    // margin: 0 !important;
-    div {
-      // padding: 0 !important;
-    }
-  }
-  #about {
-    // margin: 0 !important;
-    div {
-      // padding: 0 !important;
-    }
   }
   .carouselItem {
     height: 50vh !important;
@@ -886,6 +912,12 @@ footer {
 
   .aboutTwo {
     // padding: 0;
+  }
+  .youtube__link {
+    margin: 10px 0 !important;
+  }
+  .youtube__description {
+    text-align: justify;
   }
 
   .footer__link {

@@ -20,16 +20,16 @@
                 <div class="header_web">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                         <div class="button_carousel_container  carousel-indicators d-block">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active btn__image" aria-current="true" aria-label="Slide 1">
+                            <button id="btn__carousel" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="0" class="active btn__image" aria-current="true" aria-label="Slide 1">
                                 <img src="https://themes.muffingroup.com/be/hotel/wp-content/uploads/revslider/hotel/slide-hotel-2-bg-200x80.jpg"
                                     alt="">
                                 <div class="btn__image_text">
                                     <p>Luxury space</p>
                                 </div>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                class="btn__image" aria-label="Slide 2">
+                            <button id="btn__carousel" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="1" class="btn__image" aria-label="Slide 2">
                                 <img src="https://themes.muffingroup.com/be/hotel/wp-content/uploads/revslider/hotel/slide-hotel-1-bg-200x80.jpg"
                                     alt="">
                                 <div class="btn__image_text">
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <!-- <div style="width: 100%; position: absolute; top: 0; left: 0;" class="">
+        <div style="width: 100%; position: absolute; top: 0; left: 0;" class="header__company">
             <footer style="background-color: transparent;" class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-12">
@@ -85,8 +85,8 @@
                     </div>
                 </div>
             </footer>
-        </div> -->
-        <nav class="">
+        </div>
+        <nav id="nav" class="">
 
             <div class="nav__left">
                 <div class="logo__web">
@@ -135,8 +135,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- <div class="d-none nav__right_mobile  ">
+                <button style="background-color: transparent; " class="fa-light fa-magnifying-glass border-0 "></button>
 
-            <div class="nav__right">
+            </div> -->
+            <div class="nav__right ">
                 <div>
                     <button class="fa-light fa-magnifying-glass"></button>
                 </div>
