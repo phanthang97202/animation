@@ -708,11 +708,12 @@ nav {
 }
 .youtube__link {
   text-align: center;
-  a {
-    display: table;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+  button {
+    // display: table;
+
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
     line-height: 70px;
     box-sizing: border-box;
     i {

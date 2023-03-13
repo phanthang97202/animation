@@ -672,15 +672,14 @@ nav .nav__menu ul li a:last-child {
 .youtube__link {
   text-align: center;
 }
-.youtube__link a {
-  display: table;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+.youtube__link button {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
   line-height: 70px;
   box-sizing: border-box;
 }
-.youtube__link a i {
+.youtube__link button i {
   padding: 10px;
   font-size: 42px;
 }
