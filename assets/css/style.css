@@ -684,9 +684,52 @@ footer .footer__link li a:hover {
   }
 }
 @media screen and (max-width: 1060px) {
+  .activeIntroduce > h2,
+.activeIntroduce > p,
+.activeIntroduce > .introduce__btn {
+    animation: none !important;
+  }
+  .activeServices .servicesOne {
+    animation: none !important;
+  }
+  .activeServices .servicesTwo {
+    animation: none !important;
+  }
+  .activeServices .servicesThree {
+    animation: none !important;
+  }
+  .activeAbout .aboutTwo > h2 {
+    animation: none !important;
+  }
+  .activeAbout .aboutTwo > p {
+    animation: none !important;
+  }
+  .activeAbout .aboutTwo > ul {
+    animation: none !important;
+  }
+  .activeYoutube > div > .youtube__text,
+.activeYoutube > div > .youtube__link,
+.activeYoutube > div > .youtube__description {
+    animation: none !important;
+  }
+  .activeWeather .weather__title {
+    animation: none !important;
+  }
+  .activeBookroom .bookroom__img_bell {
+    animation: none !important;
+  }
+  .activeBookroom h4 {
+    animation: none !important;
+  }
+  .activeBookroom p {
+    animation: none !important;
+  }
+  .activeBookroom .bookroom__img_dollar {
+    animation: none !important;
+  }
   #btnOpenMenu {
     display: block !important;
-    margin-right: 60px;
+    margin-right: 70px;
     background-color: transparent;
     color: #000;
     border: none;
@@ -741,6 +784,40 @@ footer .footer__link li a:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .banner__web {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .g-5,
+.gx-5 {
+    --bs-gutter-x: 0;
+  }
+  .carouselItem {
+    height: 50vh !important;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+  .nav__left {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .activeMenu {
+    display: inline-block !important;
+    width: 100%;
+  }
+  .nav__menu {
+    position: initial;
+  }
+  .nav__menu ul {
+    width: 100%;
+    left: 0;
+    top: 90px;
+    right: 0;
+    padding-left: 20px;
+  }
   .footer__link {
     justify-content: center !important;
   }
