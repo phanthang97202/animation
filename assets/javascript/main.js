@@ -8,6 +8,17 @@ const youtube = document.getElementById("youtube");
 const nav = document.getElementById("nav");
 const nav_right = document.querySelector(".nav__right");
 const nav_right_mobile = document.querySelector(".nav__right_mobile");
+const activeSearchNav = document.getElementById("activeSearchNav");
+const openSearch = document.getElementById("openSearch");
+const closeSearchNav = document.getElementById("closeSearchNav");
+
+openSearch.addEventListener("click", () => {
+  activeSearchNav.classList.toggle("activeSearchNav");
+});
+closeSearchNav.addEventListener("click", () => {
+  activeSearchNav.classList.remove("activeSearchNav");
+});
+
 let prevRatio = 0.0;
 
 const activeObserver = (idNode, addClass) => {

@@ -112,6 +112,21 @@ ul {
 // =========================================================
 
 /* css navbar  */
+@keyframes searchNav {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.activeSearchNav {
+  display: block !important;
+  animation: searchNav 0.3s linear;
+}
+.nav__search_input::placeholder {
+  color: #fff;
+}
 .activeScrollNav {
   position: fixed;
   top: 0;
@@ -836,8 +851,14 @@ footer {
   .header__company {
     display: none;
   }
+  .container__weather {
+    padding-top: 350px;
+  }
 }
 @media screen and (max-width: 800px) {
+  .activeSearchNav {
+    display: none !important;
+  }
   #btn__carousel {
     height: 45px !important;
     width: 112px !important;

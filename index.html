@@ -141,7 +141,19 @@
             </div> -->
             <div class="nav__right ">
                 <div>
-                    <button class="fa-light fa-magnifying-glass"></button>
+                    <button id="openSearch" class="fa-light fa-magnifying-glass"></button>
+                </div>
+            </div>
+
+            <div id="activeSearchNav" style="display: none;position: absolute; bottom: -70px; left: 0; right: 0; "
+                class="nav__search ">
+                <div style="height: 70px; width: 100%;" class="d-flex">
+                    <button style="color: #fff; width: 5%; background-color: #ed703a;"
+                        class="border-0 fa-light fa-magnifying-glass "></button>
+                    <input style="background-color: #ed703a; color: #fff;height: 100%; width: 90%; outline: none;"
+                        class="border-0 nav__search_input" type="text" placeholder="Search...">
+                    <button id="closeSearchNav" style="width: 5%; background-color: #ed703a; color: #fff;"
+                        class="fa-regular fa-xmark border-0"></button>
                 </div>
             </div>
         </nav>
