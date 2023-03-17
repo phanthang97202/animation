@@ -735,49 +735,6 @@ footer .footer__link li a:hover {
   }
 }
 @media screen and (max-width: 1060px) {
-  .activeIntroduce > h2,
-.activeIntroduce > p,
-.activeIntroduce > .introduce__btn {
-    animation: none !important;
-  }
-  .activeServices .servicesOne {
-    animation: none !important;
-  }
-  .activeServices .servicesTwo {
-    animation: none !important;
-  }
-  .activeServices .servicesThree {
-    animation: none !important;
-  }
-  .activeAbout .aboutTwo > h2 {
-    animation: none !important;
-  }
-  .activeAbout .aboutTwo > p {
-    animation: none !important;
-  }
-  .activeAbout .aboutTwo > ul {
-    animation: none !important;
-  }
-  .activeYoutube > div > .youtube__text,
-.activeYoutube > div > .youtube__link,
-.activeYoutube > div > .youtube__description {
-    animation: none !important;
-  }
-  .activeWeather .weather__title {
-    animation: none !important;
-  }
-  .activeBookroom .bookroom__img_bell {
-    animation: none !important;
-  }
-  .activeBookroom h4 {
-    animation: none !important;
-  }
-  .activeBookroom p {
-    animation: none !important;
-  }
-  .activeBookroom .bookroom__img_dollar {
-    animation: none !important;
-  }
   #btnOpenMenu {
     display: block !important;
     margin-right: 70px;
@@ -913,6 +870,35 @@ footer .footer__link li a:hover {
   }
   .footer__link {
     justify-content: center !important;
+  }
+}
+.activeNavSearchWhenScroll {
+  top: 0 !important;
+  background-color: transparent !important;
+  padding-right: 13%;
+}
+.activeNavSearchWhenScroll::before {
+  display: none !important;
+}
+
+.activeNavWhenScroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0px 6%;
+  animation: navbarWhenScroll 0.2s ease-in-out;
+}
+
+@keyframes navbarWhenScroll {
+  0% {
+    padding: 0;
+  }
+  100% {
+    padding: 0 10%;
   }
 }
 

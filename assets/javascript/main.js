@@ -12,11 +12,42 @@ const activeSearchNav = document.getElementById("activeSearchNav");
 const openSearch = document.getElementById("openSearch");
 const closeSearchNav = document.getElementById("closeSearchNav");
 
+const body = document.getElementsByTagName("body")[0];
+console.log(body);
+
 openSearch.addEventListener("click", () => {
   activeSearchNav.classList.toggle("activeSearchNav");
 });
 closeSearchNav.addEventListener("click", () => {
   activeSearchNav.classList.remove("activeSearchNav");
+});
+
+window.addEventListener("scroll", () => {
+  console.log(nav.getBoundingClientRect());
+  setTimeout(() => {
+    nav.getBoundingClientRect().top <= 0 &&
+      nav.classList.add("activeNavWhenScroll");
+
+    body.getBoundingClientRect().top === 0 &&
+      nav.classList.remove("activeNavWhenScroll");
+
+    nav.getBoundingClientRect().top <= 0 &&
+      nav_right.classList.add("activeNavSearchWhenScroll");
+    body.getBoundingClientRect().top === 0 &&
+      nav_right.classList.remove("activeNavSearchWhenScroll");
+
+    if (window.innerWidth < 1060) {
+      nav.classList.remove("activeNavWhenScroll");
+    }
+  }, 100);
+});
+
+window.addEventListener("resize", () => {
+  console.log(window.innerWidth);
+  nav.classList.remove("activeNavWhenScroll");
+  if (window.innerWidth < 1060) {
+    nav.classList.remove("activeNavWhenScroll");
+  }
 });
 
 let prevRatio = 0.0;

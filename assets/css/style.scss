@@ -778,53 +778,53 @@ footer {
   // .nav__right {
   //   width: 10% !important;
   // }
-  .activeIntroduce > h2,
-  .activeIntroduce > p,
-  .activeIntroduce > .introduce__btn {
-    animation: none !important;
-  }
-  .activeServices .servicesOne {
-    // transform: translateX(-100px);
-    animation: none !important;
-  }
-  .activeServices .servicesTwo {
-    // transform: translateY(100px);
-    animation: none !important;
-  }
-
-  .activeServices .servicesThree {
-    // transform: translateX(100px);
-    animation: none !important;
-  }
-  .activeAbout .aboutTwo > h2 {
-    animation: none !important;
-  }
-  .activeAbout .aboutTwo > p {
-    animation: none !important;
-  }
-  .activeAbout .aboutTwo > ul {
-    animation: none !important;
-  }
-  .activeYoutube > div > .youtube__text,
-  .activeYoutube > div > .youtube__link,
-  .activeYoutube > div > .youtube__description {
-    animation: none !important;
-  }
-  .activeWeather .weather__title {
-    animation: none !important;
-  }
-  .activeBookroom .bookroom__img_bell {
-    animation: none !important;
-  }
-  .activeBookroom h4 {
-    animation: none !important;
-  }
-  .activeBookroom p {
-    animation: none !important;
-  }
-  .activeBookroom .bookroom__img_dollar {
-    animation: none !important;
-  }
+  //   .activeIntroduce > h2,
+  //   .activeIntroduce > p,
+  //   .activeIntroduce > .introduce__btn {
+  //     animation: none !important;
+  //   }
+  //   .activeServices .servicesOne {
+  //     // transform: translateX(-100px);
+  //     animation: none !important;
+  //   }
+  //   .activeServices .servicesTwo {
+  //     // transform: translateY(100px);
+  //     animation: none !important;
+  //   }
+  //
+  //   .activeServices .servicesThree {
+  //     // transform: translateX(100px);
+  //     animation: none !important;
+  //   }
+  //   .activeAbout .aboutTwo > h2 {
+  //     animation: none !important;
+  //   }
+  //   .activeAbout .aboutTwo > p {
+  //     animation: none !important;
+  //   }
+  //   .activeAbout .aboutTwo > ul {
+  //     animation: none !important;
+  //   }
+  //   .activeYoutube > div > .youtube__text,
+  //   .activeYoutube > div > .youtube__link,
+  //   .activeYoutube > div > .youtube__description {
+  //     animation: none !important;
+  //   }
+  //   .activeWeather .weather__title {
+  //     animation: none !important;
+  //   }
+  //   .activeBookroom .bookroom__img_bell {
+  //     animation: none !important;
+  //   }
+  //   .activeBookroom h4 {
+  //     animation: none !important;
+  //   }
+  //   .activeBookroom p {
+  //     animation: none !important;
+  //   }
+  //   .activeBookroom .bookroom__img_dollar {
+  //     animation: none !important;
+  //   }
 
   #btnOpenMenu {
     display: block !important;
@@ -982,5 +982,34 @@ footer {
 
   .footer__link {
     justify-content: center !important;
+  }
+}
+
+.activeNavSearchWhenScroll {
+  top: 0 !important;
+  background-color: transparent !important;
+  padding-right: 13%;
+  &::before {
+    display: none !important;
+  }
+}
+.activeNavWhenScroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0px 6%;
+  animation: navbarWhenScroll 0.2s ease-in-out;
+}
+
+@keyframes navbarWhenScroll {
+  0% {
+    padding: 0;
+  }
+  100% {
+    padding: 0 10%;
   }
 }
