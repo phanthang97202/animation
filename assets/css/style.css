@@ -890,15 +890,15 @@ footer .footer__link li a:hover {
   height: 60px;
   background: rgba(255, 255, 255, 0.8);
   padding: 0px 6%;
-  animation: navbarWhenScroll 0.2s ease-in-out;
+  animation: navbarWhenScroll 0.2s linear alternate;
 }
 
 @keyframes navbarWhenScroll {
-  0% {
-    padding: 0;
+  from {
+    transform: translateY(-100px);
   }
-  100% {
-    padding: 0 10%;
+  to {
+    transform: translateY(0);
   }
 }
 
